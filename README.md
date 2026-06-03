@@ -38,15 +38,14 @@ cp -r ../../../h4l_agent_test/h4l_ntuplize.py
 cp -r ../../../h4l_agent_test/docs .
 cp -r ../../../h4l_agent_test/.claude .
 cp    ../../../h4l_agent_test/prompt.md .
-~~~
+```
 
 step4: And we are off
 ```
 cat prompt.md | claude
-~~~
+````
 
 step4 (alt): And we are off
 ```
 cat prompt.md | codex
-~~~
-
+```
