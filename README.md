@@ -3,7 +3,6 @@
 This is a tutorial on using agentic workflows to do high eneryg physics anaylsis on CMS open data.
 This tutorial is designed for the USCMS meeting
 step0: install Claude or Codex. Here are the Claude instructions
-```
 
 ```
 curl -fsSL https://claude.ai/install.sh | bash
