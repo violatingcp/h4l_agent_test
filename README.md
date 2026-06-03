@@ -6,21 +6,20 @@ step0: install Claude or Codex. Here are the Claude instructions
 
 ```
 curl -fsSL https://claude.ai/install.sh | bash
-~~~
+```
 
 You will have to pay for Claude if you don't have it. Claude Pro ($20/month) is sufficient. 
 
 Also you will need Pixi
 ```
 curl -fsSL https://pixi.sh/install.sh | sh
-~~~
-
+```
 
 step1: download the data
 ```
 curl -L -o https://www.dropbox.com/scl/fi/tj2j72ub3smel2wg8arei/data.tgz?rlkey=rx0ol2uvz36dhegqcgyi4cvzc&dl=1
 tar xzvf data.tgz
-~~~
+```
 
 step2: setup the environment, 
 ```
@@ -30,7 +29,7 @@ cd jfc
 pixi run scaffold analyses/h4l_analysis --type measurement
 cd analyses/my_analysis
 pixi install
-~~~
+```
 
 step3: setup the prompts and configure Claude
 ```
