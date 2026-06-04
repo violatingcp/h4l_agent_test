@@ -17,7 +17,7 @@ curl -fsSL https://pixi.sh/install.sh | sh
 
 step1: download the data
 ```
-curl -L -o https://www.dropbox.com/scl/fi/tj2j72ub3smel2wg8arei/data.tgz?rlkey=rx0ol2uvz36dhegqcgyi4cvzc&dl=1
+curl -L -o data.tgz "https://www.dropbox.com/scl/fi/tj2j72ub3smel2wg8arei/data.tgz?rlkey=rx0ol2uvz36dhegqcgyi4cvzc&dl=1"
 tar xzvf data.tgz
 ```
 
