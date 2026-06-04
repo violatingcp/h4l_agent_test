@@ -1,0 +1,10 @@
+# The isolation hook allows access to these directories.
+# Set data_dir to the path where your input ROOT files live.
+# Add extra allow= lines for additional paths (one per line).
+data_dir=$PWD/data
+# Real files live in the sibling v2 data dir; data/ holds symlinks to them.
+allow=/Users/philipharris/Dropbox/Physics/Agent/h4ltest/test3/jfc/analyses/h4l_analysis_v2/data
+# allow=/path/to/mc/samples
+# allow=/path/to/calibration
+# Spec dirs (agents/conventions/methodology are symlinks into ../../src)
+allow=/Users/philipharris/Dropbox/Physics/Agent/h4ltest/test3/jfc/src
