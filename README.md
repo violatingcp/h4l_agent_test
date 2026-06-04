@@ -31,7 +31,7 @@ cd analyses/h4l_analysis
 pixi install
 ```
 
-step3: setup the prompts and configure Claude
+step3 standard (slow): setup the prompts and configure Claude
 ```
 cp -r ../../../data .
 cp -r ../../../h4l_agent_test/h4l_ntuplize.py .
@@ -40,6 +40,18 @@ cp -r ../../../h4l_agent_test/.claude .
 cp -r ../../../h4l_agent_test/.analysis_config .
 cp    ../../../h4l_agent_test/prompt.md .
 ```
+
+step3 alternate (go rogue/fast): setup the prompts and configure Claude
+```
+cd ../
+mkdir h4l_rogue/
+cp -r ../../../data .
+cp -r ../../../h4l_agent_test/h4l_ntuplize.py .
+cp -r ../../../h4l_agent_test/docs .
+cp -r ../../../h4l_agent_test/.claude .
+cp    ../../../h4l_agent_test/prompt.md .
+```
+
 
 step4: And we are off
 ```
