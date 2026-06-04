@@ -27,22 +27,23 @@ git clone git@github.com:violatingcp/h4l_agent_test.git
 git clone git@github.com:violatingcp/jfc.git -b jfc_lite
 cd jfc
 pixi run scaffold analyses/h4l_analysis --type measurement
-cd analyses/my_analysis
+cd analyses/h4l_analysis
 pixi install
 ```
 
 step3: setup the prompts and configure Claude
 ```
 cp -r ../../../data .
-cp -r ../../../h4l_agent_test/h4l_ntuplize.py
+cp -r ../../../h4l_agent_test/h4l_ntuplize.py .
 cp -r ../../../h4l_agent_test/docs .
 cp -r ../../../h4l_agent_test/.claude .
+cp -r ../../../h4l_agent_test/.analysis_config .
 cp    ../../../h4l_agent_test/prompt.md .
 ```
 
 step4: And we are off
 ```
-cat prompt.md | claude
+cat prompt.md | claude --permission-mode auto
 ````
 
 step4 (alt): And we are off
